@@ -163,7 +163,6 @@ def register():
     bpy.utils.register_class(ARMATURE_OT_smart_bone_dissolve)
     bpy.types.VIEW3D_MT_edit_armature.append(menu_func)
 
-
 def unregister():
     bpy.utils.unregister_class(ARMATURE_OT_smart_bone_dissolve)
     bpy.types.VIEW3D_MT_armature.remove(menu_func)
