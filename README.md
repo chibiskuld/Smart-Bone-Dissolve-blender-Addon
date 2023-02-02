@@ -1,5 +1,16 @@
-# Smart-Bone-Dissolve-blender-Addon
-This addon is aimed to ease the process of removing excess bones from an already rigged mesh or collection of meshes, while also preserving their weights. A comon use case would be turning a model rigged for animation into a game-ready model with a less complex armature
+# Smart Bone Dissolve - blender Addon
+This blender addon is aimed to ease the process of removing excess bones from an armature of an already rigged mesh or collection of meshes, while also preserving their weights. A comon use case would be turning a model initially rigged for animation into a game-ready model with a less complex armature
+
+## Examples
+Example below shows a rigged model of a characters hand, with it's palm weight painted to 1 root hand bone and 4 carpal palm bones.
+
+![Alt text](example-images/image-01.png)
+
+Consider we only need the rig to have a single hand/wrist bone instead. Simply removing the 4 carpal bones is not enough, because then the hand will need to be re-painted. By simply applying the addon, not only do the bones get dissolved, but also all of their weight paints get transferred to the parent hand bone:
+
+![Alt text](example-images/image-02.png)
+
+![Alt text](example-images/image-03.png)
 
 ## How it works
 Applying the addon to any number of selected armature bones will dissolve them and add their weights to any remaining parent bones weights
